@@ -1,5 +1,7 @@
 <template>
-  <div id="nav"></div>
+  <div id="nav">
+    <router-link to="/counter">Counter</router-link>
+  </div>
   <router-view />
 </template>
 
