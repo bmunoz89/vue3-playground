@@ -2,7 +2,8 @@
   <div id="nav">
     <router-link to="/counter">Counter</router-link> |
     <router-link to="/vue-portal">Vue Portal</router-link> |
-    <router-link to="/input">Input</router-link>
+    <router-link to="/input">Input</router-link> |
+    <router-link to="/experimental">Experimental features</router-link>
   </div>
   <router-view />
 </template>
