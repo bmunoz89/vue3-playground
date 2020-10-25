@@ -20,6 +20,15 @@ const routes: Array<RouteRecordRaw> = [
         '../views/VuePortal.vue'
       ),
   },
+  {
+    path: '/input',
+    name: 'Input',
+    component: () =>
+      import(
+        /* webpackChunkName: "input" */
+        '../views/Input.vue'
+      ),
+  },
 ]
 
 const router = createRouter({
