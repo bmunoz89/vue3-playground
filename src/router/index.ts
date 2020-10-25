@@ -11,6 +11,15 @@ const routes: Array<RouteRecordRaw> = [
         '../views/Counter.vue'
       ),
   },
+  {
+    path: '/vue-portal',
+    name: 'Vue Portal',
+    component: () =>
+      import(
+        /* webpackChunkName: "vue-portal" */
+        '../views/VuePortal.vue'
+      ),
+  },
 ]
 
 const router = createRouter({
