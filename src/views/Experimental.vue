@@ -3,14 +3,23 @@
   <button @click="toggleColor">Press me</button>
 </template>
 
-<script lang="ts" setup>
-import { ref } from 'vue'
+<script lang="ts">
+import { defineComponent, ref } from 'vue'
 
-export const color = ref<string>('red')
+export default defineComponent({
+  setup() {
+    const color = ref<string>('red')
 
-export function toggleColor(): void {
-  color.value = (color.value === 'red') ? 'blue' : 'red'
-}
+    function toggleColor(): void {
+      color.value = (color.value === 'red') ? 'blue' : 'red'
+    }
+
+    return {
+      color,
+      toggleColor,
+    }
+  },
+})
 </script>
 
 <style vars="{ color }" lang="scss" scoped>
